@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>detail product</title>
+    <style>
+        body {
+            overflow-x: hidden;
+
+        }
+
+        .input {
+            width: 400px;
+            border-radius: 25px !important;
+        }
+
+        .rounded-pill {
+            width: 100px;
+        }
+
+        .logosearch {
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            margin-left: 367px;
+            margin-top: 10px;
+        }
+
+        .logo_2 {
+            border-radius: 5px;
+            border: 1px #8E8E93 solid;
+            padding: 8px;
+        }
+
+        .cart {
+            font-size: 24px;
+            margin-right: 24px;
+            color: #8E8E93;
+        }
+
+        .bell {
+            font-size: 24px;
+            margin-right: 24px;
+            color: #8E8E93;
+        }
+
+        .envelope {
+            font-size: 24px;
+            margin-right: 24px;
+            color: #8E8E93;
+        }
+
+        .profile {
+            font-size: 24px;
+            margin-right: 24px;
+            color: #8E8E93;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .select {
+            background: #ffffff;
+            box-shadow: 0px 0px 14px rgba(173, 173, 173, 0.25);
+            width: 100%;
+            height: 64px;
+            padding: auto;
+            margin: auto;
+        }
+
+        .product {
+            background: #ffffff;
+            box-shadow: 0px 0px 14px rgba(173, 173, 173, 0.25);
+            width: 100%;
+            height: auto;
+            margin: auto;
+        }
+
+        .checkbox {
+            width: 20px;
+            height: 20px;
+            accent-color: red;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 500;
+            padding-top: 15px;
+        }
+
+        span {
+            color: #8E8E93;
+        }
+
+        .delete {
+            color: red;
+            background-color: white;
+            border: none;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .price {
+            margin-left: 10px;
+        }
+
+        /* div {
+            border: 1px solid;
+        } */
+
+        .kemal {
+            border-radius: 20px;
+        }
+
+        .summary {
+            display: flex;
+            flex-direction: column;
+            background: #ffffff;
+            box-shadow: 0px 0px 14px rgba(173, 173, 173, 0.25);
+            width: 100%;
+            margin: auto;
+            padding: auto;
+        }
+
+        .custom-pl-5 {
+            padding-left: 5rem !important;
+            margin-left: 1.5rem;
+        }
+
+        .buy {
+            background-color: red;
+            border: none;
+            border-radius: 50px;
+            width: 322px;
+            height: 36px;
+            color: #ffffff;
+        }
+
+
+
+        @media only screen and (max-width: 600px) {
+            .squer {
+                display: none;
+            }
+
+            .input {
+                width: 100%;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            hr {
+                width: auto;
+            }
+        }
+
+
+
+        a:link,
+        a:visited {
+            text-decoration: none !important;
+            color: black;
+            cursor: pointer !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <img class="logo mr-4" src="../assets/image/Group 1158 (2).png" alt="logo" />
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+                        <li class="nav-item active">
+                            <form class="d-flex">
+                                <input class="form-control mr-2 input " type="search " placeholder="Search"
+                                    aria-label="Search" />
+                                <img class="logosearch" src="../assets/image/Search Glyph.png" alt="">
+                            </form>
+                        </li>
+                        <li class="nav-item squer">
+                            <img class="logo_2" src="../assets/image/filter 1.png" alt="cart" />
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0 row justify-content-center">
+                        <i class="bi bi-cart2 cart"></i>
+                        <i class="bi bi-bell bell"></i>
+                        <i class="bi bi-envelope envelope"></i>
+                        <i class="bi bi-person-circle profile"></i>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="mt-5 mb-5">
+                    <a href="">Home</a><span>></span>
+                    <a href="">Category</a><span>></span>
+                    <a href="">T-shirt</a>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row">
+                <div class="col-md-4 left-section">
+                    <img style="border-radius: 10px;" src="../assets/image/1de17b40-c750-40ed-a618-ca2c5ee79da0 1.png" alt="product">
+                    <div class="row mt-2 m-0">
+                        <div class="col-md-3 col-3 d-flex justify-content-center">
+                            <img style="border-radius: 10px;" src="../assets/image/f2c747c5-1f63-4476-b1b9-d8aa8ace2ac2 1.png" alt="product">
+                        </div>
+                        <div class="col-md-3 col-3 d-flex justify-content-center">
+                            <img style="border-radius: 10px;" src="../assets/image/ef0755f4-97be-42d3-a1e9-e3c892b52706 1.png" alt="product">
+                        </div>
+                        <div class="col-md-3 col-3 d-flex justify-content-center">
+                            <img style="border-radius: 10px;" src="../assets/image/4bcf6332-eea3-4278-8c75-9be1f59cbfa3 1.png" alt="product">
+                        </div>
+                        <div class="col-md-3 col-3 d-flex justify-content-center">
+                            <img style="border-radius: 10px;" src="../assets/image/5f9d591f-54e0-4f48-99c8-33e5ab47c871 1.png" alt="product">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 right-section">
+                    <div>
+                        <h1>Baju muslim pira</h1>
+                        <span>Zalora cloth</span>
+                    </div>
+                    <div>
+                        <img src="../assets/image/Group 1288.png" alt="stars">
+                    </div>
+                    <div class="mt-3">
+                        <span>Price</span>
+                        <h1>$ 20.0</h1>
+                    </div>
+                    <div class="mt-3">
+                        <P>Colour</P>
+                        <div>
+                            <button style="border-style: none; background-color:white;"><img
+                                    src="../assets/image/Ellipse 5.png" alt="color"></button>
+                            <button style="border-style: none; background-color:white;"><img
+                                    src="../assets/image/Ellipse 6.png" alt="color"></button>
+                            <button style="border-style: none; background-color:white;"><img
+                                    src="../assets/image/Ellipse 7.png" alt="color"></button>
+                            <button style="border-style: none; background-color:white;"><img
+                                    src="../assets/image/Ellipse 8.png" alt="color"></button>
+                        </div>
+                    </div>
+                    <div class="mt-3 row container m-0 p-0">
+                        <div class="mr-5">
+                            <p style="text-align: center;">Size</p>
+                            <div class="row container m-0">
+                                <div class="row">
+                                    <button style="border-style: none; background-color:white;"><img
+                                        src="../assets/image/Ellipse 9.png" alt="min"></button>
+                                    <p>28</p>
+                                    <button style="border-style: none; background-color:white;"><img
+                                            src="../assets/image/Ellipse 9.png" alt="min"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p style="text-align: center;">Total</p>
+                            <div class="row container m-0">
+                                <div class="row">
+                                    <button style="border-style: none; background-color:white;"><img
+                                            src="../assets/image/Ellipse 9.png" alt="min"></button>
+                                    <p>28</p>
+                                    <button style="border-style: none; background-color:white;"><img
+                                            src="../assets/image/Ellipse 9.png" alt="min"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="mt-3">
+                <h1>Informasi product</h1>
+            </div>
+            <div class="mt-2">
+                <p>Condition <span style="color: red;"><br>New</span></p>
+            </div>
+            <div class="mt-2">
+                <p>Description <span><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <br><br>Donec non magna rutrum, pellentesque augue eu, sagittis velit. Phasellus quis laoreet
+                        dolor. Fusce nec pharetra quam. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                        Praesent sed enim vel turpis blandit imperdiet ac ac felis. Etiam tincidunt tristique placerat.
+                        Pellentesque a consequat mauris, vel suscipit ipsum.
+                        <br>Donec ac mauris vitae diam commodo vehicula. Donec quam elit, sollicitudin eu nisl at,
+                        ornare suscipit magna.
+                        <br><br>Donec non magna rutrum, pellentesque augue eu, sagittis velit. Phasellus quis laoreet
+                        dolor. Fusce nec pharetra quam. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                        Praesent sed enim vel turpis blandit imperdiet ac ac felis.
+                        In ultricies rutrum tempus. Mauris vel molestie orci.</span></p>
+            </div>
+            <div class="mt-3">
+                <h1>Product review</h1>
+            </div>
+            <div class="mt-2">
+                <div class="container row m-0 p-0">
+                    <div>
+                        <h1 style="font-size: 60px;">5.0<span style="font-size: medium;">/5</span></h1>
+                        <div class="row m-0">
+                            <img src="../assets/image/activated.png" alt="stars">
+                            <img src="../assets/image/activated.png" alt="stars">
+                            <img src="../assets/image/activated.png" alt="stars">
+                            <img src="../assets/image/activated.png" alt="stars">
+                            <img src="../assets/image/activated.png" alt="stars">
+                        </div>
+                    </div>
+                    <div class="ml-md-5 ml-auto">
+                        <div class="d-flex flex-column">
+                            <div class="d-flex justify-content-center"><img src="../assets/image/activated.png"
+                                    alt="stars"><span> 5</span></div>
+                            <div class="d-flex justify-content-center"><img src="../assets/image/activated.png"
+                                    alt="stars"><span> 4</span></div>
+                            <div class="d-flex justify-content-center"><img src="../assets/image/activated.png"
+                                    alt="stars"><span> 3</span></div>
+                            <div class="d-flex justify-content-center"><img src="../assets/image/activated.png"
+                                    alt="stars"><span> 2</span></div>
+                            <div class="d-flex justify-content-center"><img src="../assets/image/activated.png"
+                                    alt="stars"><span> 1</span></div>
+                        </div>
+                    </div>
+                    <div class="ml-3">
+                        <hr class="mt-2" style="border: 5px green solid; width: 120px; border-radius: 8px;">
+                    </div>
+                    <div class="ml-3 d-flex flex-column">
+                        <span>5</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>0</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container p-0"><hr class="mt-5" style="border: 2px color #8E8E93 solid; width: 100%;"></div>
+        <section class="container">
+           <div class="mt-5">
+            <h1>You can also like this<br><p style="font-size: medium; padding-top: 1px; color: #8E8E93;">You’ve never seen it before!</p></h1>
+           </div>
+           <div class="row mt-5 container m-0">
+                <div class="col-md-3 col-sm-6 mb-5">
+                    <div class="border rounded product">
+                        <img class="w-100" src="../assets/image/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png"
+                            alt="cloth" />
+                        <div class="p-2">
+                            <h5 class="card-title">Men's formal suit - Black & White</h5>
+                            <h5 class="text-danger">$ 40.0</h5>
+                            <img src="../assets/image/Rating 5 stars.png" alt="stars" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-5">
+                    <div class="border rounded product">
+                        <img class="w-100" src="../assets/image/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png"
+                            alt="cloth" />
+                        <div class="p-2">
+                            <h5 class="card-title">Men's formal suit - Black & White</h5>
+                            <h5 class="text-danger">$ 40.0</h5>
+                            <img src="../assets/image/Rating 5 stars.png" alt="stars" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-5">
+                    <div class="border rounded product">
+                        <img class="w-100" src="../assets/image/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png"
+                            alt="cloth" />
+                        <div class="p-2">
+                            <h5 class="card-title">Men's formal suit - Black & White</h5>
+                            <h5 class="text-danger">$ 40.0</h5>
+                            <img src="../assets/image/Rating 5 stars.png" alt="stars" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-5">
+                    <div class="border rounded product">
+                        <img class="w-100" src="../assets/image/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png"
+                            alt="cloth" />
+                        <div class="p-2">
+                            <h5 class="card-title">Men's formal suit - Black & White</h5>
+                            <h5 class="text-danger">$ 40.0</h5>
+                            <img src="../assets/image/Rating 5 stars.png" alt="stars" />
+                        </div>
+                    </div>
+                </div>
+           </div>
+           <div class="row mt-3 container m-0">
+            <div class="col-md-3 col-sm-6 mb-5">
+                <div class="border rounded product">
+                    <img class="w-100" src="../assets/image/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png"
+                        alt="cloth" />
+                    <div class="p-2">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="text-danger">$ 40.0</h5>
+                        <img src="../assets/image/Rating 5 stars.png" alt="stars" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-5">
+                <div class="border rounded product">
+                    <img class="w-100" src="../assets/image/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png"
+                        alt="cloth" />
+                    <div class="p-2">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="text-danger">$ 40.0</h5>
+                        <img src="../assets/image/Rating 5 stars.png" alt="stars" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-5">
+                <div class="border rounded product">
+                    <img class="w-100" src="../assets/image/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png"
+                        alt="cloth" />
+                    <div class="p-2">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="text-danger">$ 40.0</h5>
+                        <img src="../assets/image/Rating 5 stars.png" alt="stars" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-5">
+                <div class="border rounded product">
+                    <img class="w-100" src="../assets/image/gez-xavier-mansfield-b34E1vh1tYU-unsplash 1.png"
+                        alt="cloth" />
+                    <div class="p-2">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="text-danger">$ 40.0</h5>
+                        <img src="../assets/image/Rating 5 stars.png" alt="stars" />
+                    </div>
+                </div>
+            </div>
+       </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="path/to/jquery-3.3.1.slim.min.js"></script>
+    <script src="path/to/bootstrap.min.js"></script>
+</body>
+
+</html>
